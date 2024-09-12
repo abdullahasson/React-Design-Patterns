@@ -1,22 +1,3 @@
-// usage
-{/* 
-const RightHand = () => {
-  return <Right>Right</Right>
-}
-
-const LeftHand = () => {
-  return <Left>Left</Left>
-}
-
-<SplitScreen 
-    leftWeight={5}
-    rightWeight={1}
->
-    <LeftHand />
-    <RightHand />
-</SplitScreen> 
-*/}
-
 import styled from "styled-components";
 
 const SplitScreen = ({

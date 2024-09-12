@@ -1,0 +1,31 @@
+// usage
+
+const RightHand = () => {
+  return <Right>Right</Right>
+}
+
+const LeftHand = () => {
+  return <Left>Left</Left>
+}
+
+<SplitScreen 
+    leftWeight={5}
+    rightWeight={1}
+>
+    <LeftHand />
+    <RightHand />
+</SplitScreen> 
+
+
+const Box = styled.div`
+  background-color: #333;
+  padding: 20px;
+  text-align: center;
+`
+
+const Right = styled(Box)`
+  background-color: red;
+` 
+const Left = styled(Box)`
+  background-color: blue;
+` 

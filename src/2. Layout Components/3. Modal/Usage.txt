@@ -1,0 +1,11 @@
+import Modal from "./2. Layout Components/3. Modal/Modal"
+
+function App() {
+  return (
+    <Modal>
+        <h1>Hello</h1>
+    </Modal>
+  )
+}
+
+export default App

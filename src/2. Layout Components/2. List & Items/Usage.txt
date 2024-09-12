@@ -1,0 +1,112 @@
+import SplitScreen from "./2. Layout Components/1. Split Screen/split_screen"
+import RegularList from "./2. Layout Components/List & Items/RegularList"
+import LargePersonListItem from "./2. Layout Components/List & Items/people/LargePersonListItem"
+import SmallPersonListItem from "./2. Layout Components/List & Items/people/SmallPersonListItem"
+import LargeProductListItem from "./2. Layout Components/List & Items/products/LargeProductListItem"
+import SmallProdactListItem from "./2. Layout Components/List & Items/products/SmallProdactListItem"
+
+function App() {
+
+  const people = [
+    {
+      name: 'John Doe',
+      age: 54,
+      hairColor: 'brown',
+      hobbies: ['swimming' , 'bicycling' , 'video game']
+    } ,
+    {
+      name: 'Abod',
+      age: 18,
+      hairColor: 'brown',
+      hobbies: ['swimming' , 'bicycling' , 'video game']
+    } ,
+    {
+      name: 'Ban',
+      age: 14,
+      hairColor: 'brown',
+      hobbies: ['swimming' , 'bicycling' , 'video game']
+    } ,
+    {
+      name: 'Hadeel',
+      age: 16,
+      hairColor: 'blue',
+      hobbies: ['swimming' , 'bicycling' , 'video game']
+    } ,
+    {
+      name: 'Jak',
+      age: 24,
+      hairColor: 'green',
+      hobbies: ['swimming' , 'bicycling' , 'video game']
+    } ,
+  ]
+
+  const prodacts = [
+    {
+      name: 'Flat-Screen Tv',
+      price: '300$',
+      description: 'Huge LCD screen , a great deal',
+      rating: 4.5
+    } ,
+    {
+      name: 'wood',
+      price: '100$',
+      description: 'Huge LCD screen , a great deal',
+      rating: 5
+    } ,
+    {
+      name: 'laptop',
+      price: '1400$',
+      description: 'Huge LCD screen , a great deal',
+      rating: 1.5
+    } ,
+    {
+      name: 'Flat Screen',
+      price: '2-00$',
+      description: 'Huge LCD screen , a great deal',
+      rating: 1.2
+    } ,
+    {
+      name: 'TV',
+      price: '500$',
+      description: 'Huge LCD screen , a great deal',
+      rating: 4.2
+    } ,
+    {
+      name: 'PC',
+      price: '20.00$',
+      description: 'Huge LCD screen , a great deal',
+      rating: 3.5
+    } ,
+  ]
+
+  return (
+    <>
+      <SplitScreen>
+        <RegularList 
+          items={people}
+          resourceName='person'
+          itemComponent={LargePersonListItem}
+        />
+        <RegularList 
+          items={people}
+          resourceName='person'
+          itemComponent={SmallPersonListItem}
+        />
+      </SplitScreen>
+          <SplitScreen>
+          <RegularList 
+            items={prodacts}
+            resourceName='product'
+            itemComponent={LargeProductListItem}
+          />
+          <RegularList 
+            items={prodacts}
+            resourceName='product'
+            itemComponent={SmallProdactListItem}
+          />
+      </SplitScreen>
+    </>
+  )
+}
+
+export default App
