@@ -1,0 +1,16 @@
+> What Are Design Patterns ?
+    Design Patterns are effective solutions to 
+    common application development challenges
+
+<> A Caveat 
+    _ The design patterns we talk about in this course are not the 
+        gang of four OOP design patterns
+
+    _ The patterns we cover here are effective
+        solutions to some extrememly common challenges in React
+
+<> Common challenges    
+    _ creating reusanle layouts
+    _ reusing complex logic between multiple components
+    _ working with forms
+    _ incorporating functional concepts into our code
