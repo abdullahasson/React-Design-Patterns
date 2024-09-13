@@ -1,3 +1,5 @@
+import '@fontsource/poppins'
+
 function App() {
 
   return (
